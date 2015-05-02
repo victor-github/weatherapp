@@ -1,3 +1,24 @@
-<h2 id="title">Welcome to Ember.js</h2>
+<h2 id="title">Welcome to Weather App</h2>
+
+  <section id="weatherapp">
+    <header id="header">
+    </header>
+    <body>
+      <section id="main">
+        <h1>Location</h1>
+        {{input
+        type="text"
+        id="mylocation"
+        placeholder="Zip Code"
+        value=myLocation
+        action="updateLocation"}}
+
+        <h2>Date Range</h2>
+        From:
+      </section>
+    </body>
+    <footer>
+    </footer>
+  </section>
 
 {{outlet}}
