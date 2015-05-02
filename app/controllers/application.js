@@ -1,7 +1,7 @@
 export default Ember.Controller.extend({
   myLocation: '94040',
-  periodFrom: '',
-  periodTo: '',
+  fromDate: '',
+  toDate: '',
   actions: {
     updateData: function() {
       //update info 
