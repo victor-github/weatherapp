@@ -5,17 +5,19 @@
     </header>
     <body>
       <section id="main">
-        <h1>Location</h1>
+        <h1>Change Location</h1>
         {{input
         type="text"
         id="mylocation"
         placeholder="Zip Code"
-        value=myLocation
-        action="updateLocation"}}
+        value=locationZip
+        action="getTemp"}}
 
         <h1>Date Range</h1>
         From: {{date-picker date=fromDate valueFormat='YYYY-MM-DD'}}
         To: {{date-picker date=toDate valueFormat='YYYY-MM-DD'}}
+        <p/>
+        <button id="update-button" {{action "getTemp"}}>Refresh</button>
       </section>
     </body>
     <footer>

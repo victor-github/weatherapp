@@ -1,10 +1,12 @@
 export default Ember.Controller.extend({
-  myLocation: '94040',
+  locationZip: '',
+  latitude: '',
+  longitude: '',
   fromDate: '',
   toDate: '',
   actions: {
-    updateData: function() {
-      //update info 
+    getTemp: function() {
+      //to do
     }
   }
 });
